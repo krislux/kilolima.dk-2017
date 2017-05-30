@@ -1,0 +1,68 @@
+@import 'lib/normalize';
+@import '_vars';
+
+body {
+    background-color: #155;
+    color: white;
+}
+
+section.header {
+    background: linear-gradient(to bottom, #369, #155);
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $display-font;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 100%;
+
+    // user-select: none;
+    // -moz-user-select: none;
+    // -webkit-user-select: none;
+    // -ms-user-select: none;
+
+    .left {
+        display: inline-block;
+        transform: rotateY(180deg);
+        margin-top: -20px;
+
+        .sub-text {
+            margin-top: 70px;
+        }
+    }
+    .right {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .header-text {
+        color: rgba(0, 33, 66, 0.5);
+        float: left;
+        transition: color 0.2s;
+
+        .blink {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .sub-text {
+        position: absolute;
+        font-size: 35px;
+        margin-left: 30px;
+        color: rgba(0, 33, 66, 1);
+    }
+
+    .ca {
+        $opacity: 0.2;
+        $distance: 2px;
+        $blur: 2px;
+        text-shadow: -$distance -$distance $blur rgba(255, 0, 0, $opacity),
+            $distance $distance $blur rgba(0, 255, 0, $opacity),
+            -$distance $distance $blur rgba(0, 0, 255, $opacity);
+    }
+}
