@@ -1,12 +1,12 @@
 {
-  "name": "amunium17",
+  "name": "kilolima-2017",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal website 2017",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kris Lux <email@amunium.dk>",
+  "author": "Kris Lux <mail@kilolima.dk>",
   "license": "private",
   "devDependencies": {
     "babel-core": "^6.24.0",
