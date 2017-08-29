@@ -45,3 +45,20 @@ menu {
         }
     }
 }
+
+@media ($phone) {
+    menu {
+        top: auto;
+        bottom: 0;
+        right: 0;
+        flex-direction: row;
+        -webkit-justify-content: space-evenly;
+        justify-content: space-evenly;
+
+        li {
+            span {
+                display: none;
+            }
+        }
+    }
+}
