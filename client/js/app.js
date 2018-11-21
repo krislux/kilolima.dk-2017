@@ -2,18 +2,13 @@
 require('../sass/main.scss');
 
 window.addEventListener('DOMContentLoaded', function() {
-    var mlStr = 'bWFpbHRvOm1haWxAa2lsb2xpbWEuZGs';
-    var menuItems = document.querySelectorAll('menu > li');
-    menuItems.forEach(function (el) {
-        if (el.dataset.url) {
-            el.addEventListener('click', function() {
-                window.open(el.dataset.url);
-            })
-        }
+    let mlStr = 'bWFpbHRvOm1haWxAa2lsb2xpbWEuZGs';
+    let menuItems = document.querySelectorAll('.menu > li');
+    menuItems.forEach(el => {
         if (el.dataset.action == 'mail') {
-            el.addEventListener('click', function() {
+            el.addEventListener('click', () => {
                 location.href = atob(mlStr);
-            })
+            });
         }
     });
 });
