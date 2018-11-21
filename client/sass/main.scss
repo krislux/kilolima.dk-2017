@@ -29,10 +29,10 @@ section.splash {
     text-transform: uppercase;
     height: 100%;
 
-    // user-select: none;
-    // -moz-user-select: none;
-    // -webkit-user-select: none;
-    // -ms-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 
     .left {
         display: inline-block;
